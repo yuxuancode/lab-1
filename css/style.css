@@ -34,9 +34,9 @@ body > header {
 
 nav {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
 nav a {
@@ -151,19 +151,21 @@ main {
     padding: 18px 40px;
   }
 
-  /* Bio remains full width across desktop */
+  nav {
+    flex-direction: row;
+    gap: 20px;
+  }
+
   .bio-hero {
     flex-basis: 100%;
     width: 100%;
   }
 
-  /* Card grid switches to row with space-between */
   .card-grid {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  /* Cards resize to 30% with vertical margins cleared */
   .card {
     flex-basis: 30%;
     width: 30%;
